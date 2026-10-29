@@ -3,113 +3,342 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sufiya Arab's Portfolio</title>
+    <title>Sufiya Arab | Portfolio</title>
+    <meta name="description" content="Sufiya Arab, final-year Software Engineering student at Ontario Tech University. Experience at Ontario Power Generation building internal tools and data analysis pipelines.">
     <link rel="stylesheet" href="main.css">
     <script defer src="script.js"></script>
 </head>
 
-<body> 
-    <nav role="navigation">
-        <div class="container">
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#one">Projects</a></li>
-                <li><a href="#two">Skills</a></li>
-                <li><a href="#three">Education</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#four">Contact</a></li>
-            </ul>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container nav-bar">
+            <a class="brand" href="#top">Sufiya Arab</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="site-nav" class="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </nav>
-    
-   
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Hey there! My name is Sufiya. I am a passionate software engineering student with expertise in languages such as Python, C++, Java, Javascript,
-            HTML, CSS, JSON, PHP, and SQL. Currently pursuing a B.Eng in Software Engineering at Ontario Tech University, where
-            I have completed courses in Web Development, Object Oriented Programming, Information Technology, and Data Structures.
-        </p>
-    </section>
+    </header>
 
-    <section id="one">
-        <h2> My Projects</h2>
-        <p>
-            <strong>LookBook Dress Up Game</strong> 
-            <br><br> <em>Led a team of three to create a user-friendly game with nostalgic values and a great impact. </em>
-            <ul id="project">
-                <li>Led a dynamic team of three to achieve remarkable success in a complex project, securing an A+ grade through effective leadership and surpassing expectations.</li>
-                <li>Employed HTML, CSS, and JavaScript, with Sublime Text as the primary IDE, Eclipse as the primary server for coding, collaboration, and testing.</li>
-                <li>Used JavaScript to seamlessly embed audio in the website, and error-catching mechanisms addressed security permissions across different browsers.</li>
-                <li>Utilized HTML libraries like html2canvas and dom-to-image, enabling users to download customized images of avatars and designs in .png format directly from the web application.</li>
-            </ul>
-            <p style="text-align: center;"><a href="https://sufiyaarab.github.io/DressUpGame/" target="_blank"> Dress Up Game Link </a></p>
-        </p>
-        <img src="images/dressupgame.png" alt="Dress Up Game" style="width: 50%; height: 50%;">
-        <p>
-            <strong>Python document analyser </strong> 
-            <br><br> <em>Utilized Python and the Python library of os to create a document analyzing a user's inputted folder. </em>
-            <ul id="project">
-                <li>Created a project using Python with Visual Studio Code as the primary IDE, where the objective was to dynamically read an input folder from the user's directory and employ a specified keyword to identify files containing the targeted keyword.</li>
-                <li>Implemented Python's os module to locate folders seamlessly, systematically traversing a user's directory by leveraging Python extensions and libraries for efficient file system navigation and content analysis.</li>
-            </ul>
-            <p style="text-align: center;"><a href="https://github.com/sufiyaarab/DocumentAnalyser" target="_blank"> Python Document Analyser </a></p>
+    <main id="main">
 
-        </p>
-        <p>
-            <strong>To Do List</strong>
-            <br><br> <em>Utilized HTML, JS and CSS to create an interactive To Do List website, that stores into local storage for continual use. </em> 
-            <ul id="project">
-                <li>Developed a To-Do List web application using HTML, CSS, and JavaScript, with Visual Studio Code as the primary IDE, to create a user-friendly interface that allows users to add, delete, and edit tasks.</li>
-                <li>Employed JavaScript to store user input in local storage, enabling users to access their tasks even after closing the browser, and implemented error-catching mechanisms to ensure data integrity.</li>
-                <li>Utilized CSS to design a visually appealing interface, with a responsive layout that adapts to different screen sizes, enhancing user experience and accessibility.</li>
-            </ul>
-             <p style="text-align: center;"><a href="https://sufiyaarab.github.io/ToDoList/" target="_blank"> To Do List </a></p>
-            </p>
-        <p>
-            <strong>Jeopardy Game in C</strong>
-            <br><br> <em>In a group of 4,created a Jeopardy game in C, that allows users to play and answer questions in a terminal. </em> 
-            <ul id="project">
-                <li>Collaborated with a team of four to develop a Jeopardy game in C, using Visual Studio Code as the primary IDE, to create a user-friendly interface that allows users to play and answer questions in a terminal.</li>
-                <li>Employed C to implement a dynamic question-and-answer system, with a scoring mechanism that tracks user performance and displays the final score at the end of the game.</li>
-                <li>Utilized error-catching mechanisms to ensure data integrity and prevent runtime errors, enhancing user experience and providing a seamless gameplay experience.</li>
-           </ul> 
-             <p style="text-align: center;"><a href="https://github.com/sufiyaarab/JeopardyGrp3" target="_blank"> Jeopardy Game Link  </a></p>
-        <img src="images/jeopardygame.png" alt="Jeopardy Game" style="width: 50%; height: 50%;">
-            </p>
-    </section>
-    
-    <section id="two">
-        <h2>Skills</h2>
-        <p>
-            <strong>Languages:</strong>  Python, C, C++, Java, Javascript, HTML, CSS, JSON, PHP, SQL, VHDL, Perl, C Shell        </p>
-        <p>
-            <strong>Developer Tools:</strong>  VSCode, IntelliJ, Xilinx, Eclipse, Sublime Text, Node.js, Figma, PowerBI, MATLAB, Outlook, Microsoft Azure, Google Cloud Platform
-        </p>
-    </section>
+        <!-- Hero -->
+        <section class="hero" id="top">
+            <div class="container">
+                <h1>Sufiya Arab</h1>
+                <p class="hero-sub">Software Engineering Student at Ontario Tech University</p>
+                <ul class="hero-links">
+                    <li><a class="btn btn-primary" href="resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+                    <li><a class="btn" href="https://github.com/sufiyaarab" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a class="btn" href="https://www.linkedin.com/in/sufiya-arab" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a class="btn" href="mailto:arabsufiya04@gmail.com">Email</a></li>
+                </ul>
+            </div>
+        </section>
 
-    <section id="three">
-        <h2>Education</h2>
-        <h3>B.Eng, Software Engineering - Ontario Tech University</h3>
-        <p>2022 – 2027 | Oshawa, Canada</p>
-        <p>Completed Courses: Web Development, Object Oriented Programming, Information Technology, Data Structures</p>
-    </section>
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="container narrow">
+                <h2 class="section-title">About Me</h2>
+                <p>
+                    Hey there! My name is Sufiya. I am a final-year Software Engineering student at Ontario Tech University,
+                    graduating in April 2027. I spent 16 months at Ontario Power Generation building software for nuclear
+                    inspection teams, from full-stack internal tools to data analysis pipelines.
+                </p>
+                <p>
+                    I like taking a problem from requirements to something people actually use every day. I work in Python,
+                    JavaScript, Java, C#, SQL, and C/C++, and I build with AI coding tools daily.
+                </p>
+            </div>
+        </section>
 
-    <section id="achievements">
-        <h2> My Achievements</h2>
-        <p>
-            Certificate of Studies in French Immersion <strong>| June 2022 </strong><br>
-            Ontario Scholars Award <strong>| June 2022 </strong><br>
-            Awarded Provincial Medal at DECA <strong>| February 2019 </strong><br>
-        </p>
-    </section>
+        <!-- Professional Experience -->
+        <section class="section alt" id="experience">
+            <div class="container">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-intro">The code and data behind this work are confidential to the employer, so each project is written up as a short case study.</p>
 
-    <section id="four">
-        <h2>Contact</h2>
-        <p>Email: arabsufiya04@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/sufiya-arab" target="_blank">Sufiya's LinkedIn Profile</a></p>
-        <p>GitHub: <a href="https://github.com/sufiyaarab" target="_blank">Sufiya's Github Profile</a></p>
-        <p>Resume Link: <a href="c:\Users\16477\portfolio\Portfolio\Sufiya-Arab_Resume.pdf" target="_blank">Sufiya's Resume </a></p>
-    </section>
+                <article class="role">
+                    <div class="role-head">
+                        <div>
+                            <h3>Ontario Power Generation</h3>
+                            <p class="role-title">Professional Engineering Year Student, Analysis and IT</p>
+                        </div>
+                        <p class="role-dates">April 2025 to August 2026</p>
+                    </div>
+
+                    <div class="case-grid">
+                        <div class="case">
+                            <h4>Internal Records Database Tool</h4>
+                            <ul class="tags">
+                                <li>ASP.NET</li><li>C#</li><li>SQL Server</li><li>Python</li><li>scikit-learn</li><li>pandas</li>
+                            </ul>
+                            <p>
+                                Designed and built an end-to-end internal database tool in ASP.NET and object-oriented C# on SQL Server,
+                                replacing a manual record-keeping process for a team of more than 30 users. Gathered requirements from
+                                end users, mapped the manual workflow to find where errors entered, and iterated on user feedback until
+                                it was adopted into daily use. Includes a machine learning layer in Python (scikit-learn, pandas) that
+                                uses NLP to parse unstructured records into searchable fields.
+                            </p>
+                            <p class="note">Code internal to OPG.</p>
+                        </div>
+
+                        <div class="case">
+                            <h4>3D Scan Stitching and Visualization Tool</h4>
+                            <ul class="tags">
+                                <li>Python</li><li>NumPy</li><li>pandas</li><li>Open3D</li><li>Matplotlib</li><li>Plotly</li>
+                            </ul>
+                            <p>
+                                Built a Python tool that automatically aligns partial inspection scans with no manual positioning. It
+                                generates candidate alignments, scores each one on how well the overlapping geometry agrees, and selects
+                                the best fit. Measurement variation is rendered as heat map reports that supported inspection analysis
+                                and decision-making.
+                            </p>
+                            <p class="note">Code internal to OPG.</p>
+                        </div>
+
+                        <div class="case">
+                            <h4>Statistical Verification of Analysis Software</h4>
+                            <ul class="tags">
+                                <li>Excel</li><li>Statistics</li>
+                            </ul>
+                            <p>
+                                Compared automated analysis output against manually measured reference data in Excel, computing mean,
+                                standard deviation, and 2-sigma variance across data sets. The evidence-based recommendation drove the
+                                decision to return the software to its vendor.
+                            </p>
+                            <p class="note">Documentation internal to OPG.</p>
+                        </div>
+
+                        <div class="case">
+                            <h4>Automated Switch Configuration Backup System</h4>
+                            <ul class="tags">
+                                <li>Python</li><li>SFTP</li><li>Networking</li>
+                            </ul>
+                            <p>
+                                Built a Python system that backs up configurations from roughly 50 network, audio, and video switches
+                                to an SFTP server every day. Change detection and version retention create an auditable history that
+                                supports compliance and recovery.
+                            </p>
+                            <p class="note">Code internal to OPG.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="role">
+                    <div class="role-head">
+                        <div>
+                            <h3>Dough Dough Digital Inc.</h3>
+                            <p class="role-title">Software Developer</p>
+                        </div>
+                        <p class="role-dates">February 2025 to April 2025</p>
+                    </div>
+
+                    <div class="case-grid single">
+                        <div class="case">
+                            <h4>Pathfinding for In-Game Navigation</h4>
+                            <ul class="tags">
+                                <li>Godot</li><li>Algorithms</li>
+                            </ul>
+                            <p>
+                                Researched and implemented pathfinding algorithms in the Godot game engine for in-game navigation,
+                                prototyping multiple approaches and comparing their performance to find the most efficient option for
+                                the studio. Documented the approach and findings for the development team and delivered within a fixed
+                                timeline.
+                            </p>
+                            <p class="note">Code belongs to the studio.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section" id="projects">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="project-grid">
+                    <article class="project featured">
+                        <a class="project-media" href="https://sufiyaarab.github.io/DressUpGame/" target="_blank" rel="noopener">
+                            <img src="images/dressupgame.png" alt="Screenshot of the LookBook dress up game" loading="lazy" width="1200" height="750">
+                        </a>
+                        <div class="project-body">
+                            <h3>LookBook Dress Up Game</h3>
+                            <ul class="tags">
+                                <li>HTML</li><li>CSS</li><li>JavaScript</li>
+                            </ul>
+                            <p>
+                                An interactive dress-up game where users style a character and download their creation as a PNG,
+                                using html2canvas and dom-to-image. Built in a team of three.
+                            </p>
+                            <a class="link" href="https://sufiyaarab.github.io/DressUpGame/" target="_blank" rel="noopener">Play the game</a>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <div class="project-body">
+                            <h3>Grocery Product Management System</h3>
+                            <ul class="tags">
+                                <li>Java</li><li>Design Patterns</li>
+                            </ul>
+                            <p>
+                                An object-oriented Java application that applies the Abstract Factory design pattern to manage
+                                product categories and inventory.
+                            </p>
+                            <a class="link" href="https://github.com/sufiyaarab/GroceryStoreAbstractFactory" target="_blank" rel="noopener">View on GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <div class="project-body">
+                            <h3>Document Analyser</h3>
+                            <ul class="tags">
+                                <li>Python</li>
+                            </ul>
+                            <p>
+                                A Python tool that searches every document in a chosen folder for user-specified keywords using the
+                                os library, returning matches across the folder in one pass.
+                            </p>
+                            <a class="link" href="https://github.com/sufiyaarab/DocumentAnalyser" target="_blank" rel="noopener">View on GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <div class="project-body">
+                            <h3>To Do List</h3>
+                            <ul class="tags">
+                                <li>JavaScript</li><li>localStorage</li>
+                            </ul>
+                            <p>A task manager that keeps tasks in browser local storage, so the list is still there after the browser closes.</p>
+                            <a class="link" href="https://sufiyaarab.github.io/ToDoList/" target="_blank" rel="noopener">Open the app</a>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="earlier-work">
+                    Earlier work:
+                    <a href="https://github.com/sufiyaarab/JeopardyGrp3" target="_blank" rel="noopener">Jeopardy game in C</a>,
+                    a terminal game built in a team of four.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section alt" id="skills">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-group">
+                        <h3>Languages</h3>
+                        <ul class="chips">
+                            <li>Python</li><li>JavaScript</li><li>Java</li><li>C#</li><li>SQL</li><li>C/C++</li><li>PowerShell</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Frameworks and Libraries</h3>
+                        <ul class="chips">
+                            <li>React</li><li>Node.js</li><li>ASP.NET</li><li>NumPy</li><li>pandas</li><li>scikit-learn</li><li>Matplotlib</li><li>Plotly</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group wide">
+                        <h3>Developer Tools</h3>
+                        <ul class="chips">
+                            <li>Git</li><li>AI coding agents (Claude) and LLM developer tools</li><li>VS Code</li><li>IntelliJ</li>
+                            <li>SQL Server</li><li>Linux</li><li>Excel</li><li>Visio</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="section" id="education">
+            <div class="container">
+                <h2 class="section-title">Education and Certifications</h2>
+
+                <div class="card">
+                    <div class="role-head">
+                        <div>
+                            <h3>Ontario Tech University</h3>
+                            <p class="role-title">B.Eng, Software Engineering</p>
+                        </div>
+                        <p class="role-dates">September 2022 to April 2027<br><span class="muted">Oshawa, ON</span></p>
+                    </div>
+                    <h4 class="sub-label">Relevant coursework</h4>
+                    <ul class="chips">
+                        <li>Data Structures</li><li>Algorithms</li><li>Deep Learning Architecture and Algorithms</li>
+                        <li>Computer Networks</li><li>Distributed Systems</li><li>Embedded Systems</li>
+                        <li>Software Design</li><li>Databases</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Certifications</h3>
+                    <ul class="plain-list">
+                        <li>CCNA 2020: Networking Components</li>
+                        <li>CompTIA Tech+: Networking</li>
+                        <li>CompTIA ITF: Networking &amp; Wireless <span class="muted">(Skillsoft, 2026)</span></li>
+                        <li>IBM Z Xplore <span class="muted">(IBM, 2024)</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership and Achievements -->
+        <section class="section alt" id="achievements">
+            <div class="container">
+                <h2 class="section-title">Leadership and Achievements</h2>
+
+                <div class="card">
+                    <h3>IBM Z Student Club, Ontario Tech University</h3>
+                    <p>
+                        Designed promotional material for club events featuring IBM guest speakers, including IBM Z career
+                        sessions and an IBM Z Day conference seminar.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Awards</h3>
+                    <ul class="award-list">
+                        <li><span>Certificate of Studies in French Immersion</span><span class="date">June 2022</span></li>
+                        <li><span>Ontario Scholars Award</span><span class="date">June 2022</span></li>
+                        <li><span>Provincial Medal at DECA</span><span class="date">February 2019</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section" id="contact">
+            <div class="container narrow">
+                <h2 class="section-title">Contact</h2>
+                <ul class="contact-list">
+                    <li><span class="contact-label">Email</span><a href="mailto:arabsufiya04@gmail.com">arabsufiya04@gmail.com</a></li>
+                    <li><span class="contact-label">LinkedIn</span><a href="https://www.linkedin.com/in/sufiya-arab" target="_blank" rel="noopener">linkedin.com/in/sufiya-arab</a></li>
+                    <li><span class="contact-label">GitHub</span><a href="https://github.com/sufiyaarab" target="_blank" rel="noopener">github.com/sufiyaarab</a></li>
+                    <li><span class="contact-label">Resume</span><a href="resume.pdf" target="_blank" rel="noopener">resume.pdf</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year">2026</span> Sufiya Arab</p>
+        </div>
+    </footer>
 </body>
 </html>

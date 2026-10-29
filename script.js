@@ -1,40 +1,44 @@
-document.querySelectorAll('nav ul li a').forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const target = document.querySelector(e.target.getAttribute('href'));
-        target.scrollIntoView({ behavior: 'smooth' });
-    });
+// Mobile menu toggle
+const toggle = document.querySelector('.nav-toggle');
+const nav = document.getElementById('site-nav');
+
+function setMenu(open) {
+    toggle.setAttribute('aria-expanded', String(open));
+    nav.classList.toggle('open', open);
+}
+
+toggle.addEventListener('click', () => {
+    setMenu(toggle.getAttribute('aria-expanded') !== 'true');
 });
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show');
-        }
-    });
+nav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => setMenu(false));
 });
 
-document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
-
-document.querySelectorAll('nav ul li a').forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const target = document.querySelector(e.target.getAttribute('href'));
-        target.scrollIntoView({ behavior: 'smooth' });
-    });
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') setMenu(false);
 });
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show');
-        }
-    });
-});
+// Highlight the nav link for the section currently on screen
+const navLinks = Array.from(nav.querySelectorAll('a'));
+const sections = navLinks
+    .map((link) => document.querySelector(link.getAttribute('href')))
+    .filter(Boolean);
 
-document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
+if ('IntersectionObserver' in window) {
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            const id = '#' + entry.target.id;
+            navLinks.forEach((link) => {
+                link.classList.toggle('active', link.getAttribute('href') === id);
+            });
+        });
+    }, { rootMargin: '-45% 0px -50% 0px' });
 
+    sections.forEach((section) => sectionObserver.observe(section));
+}
+
+// Footer year
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
